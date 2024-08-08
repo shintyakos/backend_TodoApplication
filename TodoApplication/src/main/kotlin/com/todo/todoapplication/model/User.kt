@@ -1,9 +1,6 @@
 package com.todo.todoapplication.model
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
-import jakarta.persistence.Table
+import jakarta.persistence.*
 import java.time.LocalDateTime
 
 @Entity
@@ -11,7 +8,7 @@ import java.time.LocalDateTime
 open class User {
     @Id
     @Column(name = "user_id", nullable = false)
-    open var userId: String? = null
+    open var userId: ByteArray? = null
 
     @Column(name = "name", nullable = false)
     open var name: String? = null
